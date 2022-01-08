@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title>SignUp</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+         
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .container{
+         color: white;
+         position: relative;
+         display: block;
+         margin-top: 0;
+         padding-top: auto;
+         background-color: rgba(0, 0, 0, 0.699);
+         width: 35%;
+     }
+     .container h2{
+         text-align: center;
+         margin-bottom: 10px;
+     }
+     .box {
+         width: 100%;
+         padding: 20px;
+         border-style: none;
+         border: none;
+         outline: none;
+     }
+     .no-outline:focus {
+  outline: none;
+}
+     .box input{
+         background: rgb(78, 78, 78);
+         border-style: none;
+         border:none;
+         outline: none;
+     }
+     .btn{
+         position: absolute;
+         align-content: center;
+         background-color: red;
+     }
+     .box ::placeholder{
+         color: rgb(207, 207, 207);
+         opacity: 1;
+         border-style: none;
+     }
+     a{
+         color: rgb(255, 0, 0);
+     }
+     a:hover{
+         text-decoration: none;
+         color: rgb(255, 0, 0);
+     }
+     .form-control:hover{
+         transition: 0.5s;
+         background-color: rgba(255, 0, 0, 0.658);
+         outline: none;
+     }
+     
+
+</style>
+</head>
+<body style="background-image: url(bg2.jpg);">
+    <b><p style="color: #f79526;margin-left: 45px;margin-top:10px;text-shadow: 3px 3px 3px #070707, 0 0 5px #000000;opacity:50000000;font-size: 40px;"><a href="index.php">Streamz</a></p></b>
+<div class="container">
+    <form action="signuphelp.php" method="POST">
+		<h2>Sign Up</h2>
+		<hr>
+        <div class="box">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" style="color: white;height: 40px;"  class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+				<div class="col-xs-6"><input type="text"  style="color: white;height: 40px;" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+			</div>        	
+        </div>
+        <div class="box">
+        	<input type="email" style="color: white;height: 40px;" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+		<div class="box">
+            <input type="password" style="color: white;height: 40px;" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+		<div class="box">
+            <input type="password" style="color: white;height: 40px;" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>        
+        <div class="form-group" style="margin-left: 20px;color: gray;">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#" style="color: gray;">Terms of Use</a> &amp; <a href="#" style="color: gray;">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" style="color: white;margin-top: 0px;margin-left: 38%;outline: none;" class="btn">Sign Up</button>
+        </div><br>
+    </form>
+	<p style="text-align: center;margin-top: 19px;">Already have an account? <a href="login.html" style="color: rgb(255, 0, 0);">LogIn Here</a></p>
+</div>
+<br><br><br>
+</body>
+</html>
